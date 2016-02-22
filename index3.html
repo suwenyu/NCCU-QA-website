@@ -12,10 +12,10 @@
 	</style>
 
 	<script type="text/javascript">
-		var problem = [];
-		$.getJSON("index.json", function(json){
+		$.getJSON("http://suwenyu.github.io/NCCUQA/index.json", function(json){
 			for(var i in json.problem) {
-				console.log(i);
+				var test = json.problem[i].Question
+				console.log(test);
 			}
 		});
 
